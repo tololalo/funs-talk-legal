@@ -1,0 +1,62 @@
+:root {
+  --bnb: #F0B90B;
+  --bnb-dark: #D4A30A;
+  --ink: #16161a;
+  --mid: #4a4a55;
+  --dim: #8a8a96;
+  --line: #e6e6ec;
+  --bg: #ffffff;
+  --card: #fafafb;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.7;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+header.site {
+  display: flex; align-items: center; gap: 12px;
+  padding-bottom: 20px; margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.logo {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: var(--bnb); color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 18px; letter-spacing: -0.5px;
+}
+.brand { font-weight: 700; font-size: 18px; }
+.brand small { display: block; font-weight: 500; color: var(--dim); font-size: 12px; }
+h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.6px; margin: 8px 0 4px; }
+.meta { color: var(--dim); font-size: 14px; margin-bottom: 8px; }
+.note {
+  background: var(--card); border: 1px solid var(--line);
+  border-left: 3px solid var(--bnb);
+  padding: 12px 16px; border-radius: 8px; font-size: 14px; color: var(--mid);
+  margin: 20px 0 28px;
+}
+h2 { font-size: 20px; font-weight: 700; margin: 36px 0 10px; letter-spacing: -0.3px; }
+p { margin: 10px 0; color: var(--mid); }
+strong { color: var(--ink); }
+ul { margin: 10px 0; padding-left: 22px; color: var(--mid); }
+li { margin: 6px 0; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink); font-weight: 700; background: var(--card); }
+a { color: var(--bnb-dark); text-decoration: none; font-weight: 600; }
+a:hover { text-decoration: underline; }
+footer.site { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--dim); font-size: 13px; }
+.nav { display: flex; gap: 18px; margin-top: 6px; }
+.cards { display: grid; gap: 14px; margin-top: 28px; }
+.card {
+  display: block; padding: 20px; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--card); transition: border-color .15s;
+}
+.card:hover { border-color: var(--bnb); text-decoration: none; }
+.card h3 { margin: 0 0 4px; font-size: 17px; color: var(--ink); }
+.card p { margin: 0; font-size: 14px; }
